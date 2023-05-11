@@ -9,7 +9,7 @@ namespace Shop.Api.Models
     {
         public EmployeeModel() { }
 
-        public EmployeeModel(int id, string name, string email, string password, string phone, int position)
+        public EmployeeModel(int id, string name, string email, string password, string phone, string position)
         {
             Id = id;
             Name = name;
@@ -32,7 +32,7 @@ namespace Shop.Api.Models
         public string Phone { get; set; } = default!;
 
         [Required(ErrorMessage = "O cargo do empregado é obrigatório")]
-        public int Position { get; set; } = default!;
+        public string Position { get; set; } = default!;
 
     }
 }
