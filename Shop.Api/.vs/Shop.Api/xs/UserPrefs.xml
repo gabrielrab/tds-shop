@@ -4,7 +4,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Shop.Api" expanded="True" />
+          <Node name="Shop.Api" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -14,5 +14,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
