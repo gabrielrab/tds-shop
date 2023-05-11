@@ -1,10 +1,10 @@
-﻿<Properties StartupConfiguration="{D77D780D-0433-4AD7-B852-E97D7991D479}|https">
+﻿<Properties StartupConfiguration="{7A6365C8-DD56-4107-8476-1C12B867380E}|https">
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Shop.Api" expanded="True" selected="True" />
+          <Node name="tds-shop" expanded="True" />
         </State>
       </Pad>
     </Pads>
@@ -14,4 +14,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
