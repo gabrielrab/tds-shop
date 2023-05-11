@@ -10,9 +10,9 @@ namespace Shop.Api.Models
 
         public OrderModel(DateTime created_at, double total, int employee_id)
         {
-            Total = total;
-            CreatedAt = created_at;
-            EmployeeId = employee_id;
+            this.Total = total;
+            this.CreatedAt = created_at;
+            this.EmployeeId = employee_id;
         }
 
 
@@ -22,7 +22,6 @@ namespace Shop.Api.Models
         [Required(ErrorMessage = "A data da venda é obrigatório")]
         public DateTime CreatedAt { get; set; } = default!;
 
-        [JsonIgnore]
         [Required(ErrorMessage = "O funcionário é obrigatório")]
         public int EmployeeId { get; set; } = default!;
 
