@@ -1,0 +1,40 @@
+@page
+@model Shop.View.Pages.ViewVendas
+@{
+    ViewData["Title"] = "Visualizar Vendas";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<head>
+    <link href="/css/ViewVendas.css" rel="stylesheet">
+</head>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Funcionário</th>
+                <th scope="col">Total</th>
+                <th scope="col">Criado em</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td scope="row">@order.Id.ToString()</td>
+                    <td>@order.Employee.Name</td>
+                    <td>@order.Total.ToString()</td>
+                    <td>@order.CreatedAt.ToString()</td>
+                    <td>
+                        <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                        <a class="delete" title="Delete" asp-page="="./Delete asp-route-itemid="=@order.Id" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
