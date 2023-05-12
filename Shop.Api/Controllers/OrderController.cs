@@ -19,7 +19,7 @@ namespace Shop.Api.Controllers
         public async Task<IActionResult> Get()
         {
             var orders = await _orderRepository.GetAll();
-            return Ok(orders);
+            return Ok(orders.ToList());
         }
 
         [HttpGet("{id}")]

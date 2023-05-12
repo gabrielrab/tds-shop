@@ -1,18 +1,35 @@
-﻿<Properties StartupConfiguration="{7A6365C8-DD56-4107-8476-1C12B867380E}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{7A6365C8-DD56-4107-8476-1C12B867380E}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shop.View/Pages/ViewVendas.cshtml">
+    <Files>
+      <File FileName="Shop.View/Pages/ViewVendas.cshtml.cs" Line="30" Column="10" />
+      <File FileName="Shop.View/Pages/ViewVendas.cshtml" Line="40" Column="7" NotebookId="1" />
+      <File FileName="Shop.View/wwwroot/css/ViewVendas.css" Line="8" Column="2" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="tds-shop" expanded="True" />
+          <Node name="tds-shop" expanded="True">
+            <Node name="Shop.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Shop.View" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="ViewVendas.cshtml" expanded="True" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Shop.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Shop.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
