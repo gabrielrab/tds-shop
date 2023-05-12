@@ -1,19 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
+using Shop.Api.Models;
 
 namespace Shop.View.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
+    public List<ProductModel> products = new();
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public async Task OnGetAsync()
     {
-        _logger = logger;
-    }
-
-    public void OnGet()
-    {
-
+        HttpClient client = new() { BaseAddress = new Uri("http://localhost:5135/api/product") };
+        var response = await client.GetAsync("");
+        if (response.IsSuccessStatusCode)
+        {
+            products = JsonConvert.DeserializeObject<List<ProductModel>>(
+                await response.Content.ReadAsStringAsync()
+            )!;
+        }
     }
 }
