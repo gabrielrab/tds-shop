@@ -28,3 +28,7 @@ body {
 .product-card {
   width: 280px;
 }
+
+.order-form {
+  width: 450px;
+}

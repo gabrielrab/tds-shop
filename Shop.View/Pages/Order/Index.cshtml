@@ -1,0 +1,34 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Realizar pedido";
+}
+
+<div class="text-center">
+    <h1 class="display-4 mb-5">Realizar pedido</h1>
+    <div class="d-flex justify-content-center text-start">
+        <form method="post" class="card mb-4 rounded-3 shadow-sm p-4 text-left order-form">
+            <label class="form-label">Funcionario:</label>
+            <select name="employeeId" class="form-select">
+                <option selected>Selecione</option>
+                @* @if (Model.employees.Any()){
+                    @foreach (var employee in Model.employees){
+                        <option value="@employee.Id">@employee.Name</option>
+                    }
+                } *@
+            </select>
+            <label class="form-label">Produto:</label>
+            <select name="productId" class="form-select">
+                <option hidden>Selecione</option>
+                @if (Model.products.Any()){
+                    @foreach (var product in Model.products){
+                        <option value="@product.Id">@product.Name</option>
+                    }
+                }
+            </select>
+            <label class="form-label">Quantidade:</label>
+            <input name="quantity" type="number" min="1" class="form-select"/>
+            <button type="submit" class="m-2 btn btn-primary">Realizar pedido</button>
+        </form>        
+    </div>
+</div>
